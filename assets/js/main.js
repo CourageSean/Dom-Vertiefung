@@ -284,12 +284,16 @@ button1.addEventListener("click", () => {
   console.log(counter);
   counter += 1;
   const span = document.createElement("span");
-  innerUmwickler.appendChild(span);
+  span.classList.add("weiss");
+  umwickler.appendChild(span);
+  umwickler.style.gridTemplateColumns = `repeat(${counter},1fr)`;
   span.innerText = `${counter}`;
-  if (counter === 10) {
-    counter = 0;
-    umwickler.appendChild(innerUmwickler);
-  }
+  //   if (counter === 10) {
+  //     counter = 0;
+  //     umwickler.appendChild(innerUmwickler);
+  // umwickler
+
+  //   }
 });
 
 //Lev 2_8
